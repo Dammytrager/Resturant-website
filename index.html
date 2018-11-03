@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width initial-scale=1'>
+    <title>This Resturant | Home</title>
+    <link rel='stylesheet' href='css/bootstrap.min.css'>
+    <link rel="stylesheet" type='text/css' href="this resturant.css">
+    <link rel="stylesheet" type='text/css' href="css/flexslider.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+    <script src='js/jquery.min.js' ></script>
+    <script src='js/bootstrap.min.js' ></script>
+    <script src='fontawesome/js/all.js'></script>
+    <script type="text/javascript" src='js/jquery.flexslider.js'></script>
+    <script type="text/javascript" src='js/script.js'></script>
+    <script type="text/javascript" src='js/float-panel.js'></script>
+    <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+    <style type="text/css">
+        @media (max-width: 991px) {
+          .navbar-header {
+              float: none;
+          }
+          .navbar-left,.navbar-right {
+              float: none !important;
+          }
+          .navbar-toggle {
+              display: block;
+          }
+          .navbar-collapse {
+              border-top: 1px solid transparent;
+              box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+          }
+          .navbar-fixed-top {
+          top: 0;
+          border-width: 0 0 1px;
+        }
+          .navbar-collapse.collapse {
+              display: none!important;
+          }
+          .navbar-nav {
+              float: none!important;
+          margin-top: 7.5px;
+        }
+        .navbar-nav>li {
+              float: none;
+          }
+          .navbar-nav>li>a {
+              padding-top: 10px;
+              padding-bottom: 10px;
+          }
+          .collapse.in{
+            display:block !important;
+        }
+
+        .search {
+                  width:100%;
+        }
+
+        .search input.form-control  {
+                                width:100%;
+                                margin-bottom:10px;
+        }
+        button[class='btn btn-outline-primary'] {
+                                                  width:100%;
+                                                }
+        }
+    </style>
+  </head>
+  <body>
+
+    <!--Banner-->
+    <div class="container-fluid banner">
+      <!--Brand and Icons-->
+      <div class="row first">
+        <div class="col-xs-3 text-left">
+            <a href='#' class='brand'><i class="fas fa-utensils fa-4x" style='border:solid 2px #ECDAE8; padding: 5px; border-radius:10px;'></i></a>
+        </div>
+        <div class="col-xs-9 text-right group-social">
+          <div class='social'>
+            <i class="fab fa-facebook-square fa-2x" title='facebook'></i>
+          </div>
+          <div class='social'>
+            <i class="fab fa-instagram fa-2x" title='instagram'></i>
+          </div>
+          <div class='social'>
+            <i class="fab fa-twitter fa-2x" title='twitter'></i>
+          </div>
+          <div class='social'>
+            <i class="fa fa-envelope fa-2x" title='mail'></i>
+          </div>
+        </div>
+      </div>
+      <!--End of Brand and Icons-->
+
+      <!--Website Title-->
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 text-center title-container">
+          <h1 class='title'>Food Masters <span class='signature'>Resturant</span></h1>
+        </div>
+      </div>
+      <!--End of Website Title-->
+
+      <!--Flexslider-->
+      <div class="container flex">
+        <div class="flexslider text-center">
+          <ul class='slides'>
+            <li>
+              <h1 class='flexslider-header'>A Resturant serving home cooked, locally sourced, organic food</h1>
+              <p  class='flexslider-text'>with running views of the ocean, This resturant offers the perfect environment
+                 to unwind and recharge the batteries. Our menu offers a wide range of breakfasts,
+                 brunches and lunches, including a range of vegetarian options. Whether you sip on
+                 a fresh, hot coffee or a cooling smoothie, you never need to feel rushed - relax with
+                 friends or just watch the world go by.</p>
+            </li>
+
+            <li>
+              <h1 class='flexslider-header'>This weekend special brunch</h1>
+              <p class='flexslider-text'>This weekend, our season of special brunches continues with scrambled egg on
+                an English muffin. Not for the feint-hearted, the secret to these eggs is that
+                they are made with half cream and cooked in butter with no more than four eggs
+                 in the pan at a time.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--End of Flexslider-->
+
+      <!--scroll down button-->
+      <div class="scroll text-center">
+        <a href="#nav">
+          <button class='btn scroll'><i class="fas fa-arrow-down"></i></button>
+        </a>
+      </div>
+      <!--End of scroll down button-->
+
+    </div>
+    <!--End of banner-->
+
+    <!--Navbar-->
+    <nav class="navbar navbar-inverse float-panel" data-scroll='150' data-top='0' id='nav'>
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header" style='height:70px;'>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="margin-top:16px;">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a href="#" class='navbar-brand'>
+            <i class="fas fa-utensils" style='border:solid 2px #ECDAE8; padding: 2px; border-radius:5px;'></i>
+            FM<span class='special'>R</span>
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class='on'><a href="#">Home <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+
+          <form class="navbar-form navbar-right">
+            <button type="submit" class="btn order">Make order</button>
+          </form>
+        </div><!-- /.navbar-collapse -->
+
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!--End of Navbar-->
+
+  <!--small hype-->
+  <section class='small-hype'>
+    <div class="container slideanim">
+      <div class="row text-center">
+        <h1>We Provide Quality</h1>
+        <div class="col-sm-4 col-md-3">
+          <div class='contain'>
+            <div class="hype-head">
+            <div class="icon">
+              <img src="images/tray.png">
+            </div>
+          </div>
+            <div class="hype-text">
+            <h3>Quality Cuisine</h3>
+            <p>Lorem ipsum dolor sit amet,
+              consectetuer adipiscing elit. Fusce tellus.
+              Vivamus ac leo pretium faucibus. Nullam rhoncus aliquam metus.
+              Temporibus autem quibusdam et aut officiis debitis
+            </p>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-md-3">
+          <div class="contain">
+            <div class="hype-head">
+              <div class="icon">
+                <img src="images/fast-food.png">
+              </div>
+            </div>
+            <div class="hype-text">
+              <h3>Fresh Foods</h3>
+              <p>Lorem ipsum dolor sit amet,
+                consectetuer adipiscing elit. Fusce tellus.
+                Vivamus ac leo pretium faucibus. Nullam rhoncus aliquam metus.
+                Temporibus autem quibusdam et aut officiis debitis
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-md-3">
+          <div class="contain">
+            <div class="hype-head">
+              <div class="icon">
+                <img src="images/clock.png">
+              </div>
+            </div>
+            <div class="hype-text">
+              <h3>Fast Delivery</h3>
+              <p>Lorem ipsum dolor sit amet,
+                consectetuer adipiscing elit. Fusce tellus.
+                Vivamus ac leo pretium faucibus. Nullam rhoncus aliquam metus.
+                Temporibus autem quibusdam et aut officiis debitis
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class=" col-sm-4 col-md-3">
+          <div class="contain">
+            <div class="hype-head">
+              <div class="icon">
+                <img src="images/staff.png">
+              </div>
+            </div>
+            <div class="hype-text">
+              <h3>Friendly Staffs</h3>
+              <p>Lorem ipsum dolor sit amet,
+                consectetuer adipiscing elit. Fusce tellus.Vivamus ac leo pretium faucibus.
+                Nullam rhoncus aliquam metus.
+                Temporibus autem quibusdam et aut officiis debitis
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End of small hype-->
+
+  <!--Order-->
+  <section class='order-section'>
+    <div class="container text-center slideanim">
+      <h1>Order Now</h1>
+      <div class="row bxslider">
+          <!--food 1-->
+            <div class="col-sm-4">
+              <div class='food-item'>
+                <div class="food-picture">
+                  <img src="images/desert1.jpeg" class='img img-responsive' >
+                </div>
+                <div class="food-description">
+                  <p class='price'>$5.00</p>
+                  <h3>Pecan Cake</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                  <button type="button" class='btn btn-success'>Order</button>
+                </div>
+              </div>
+            </div>
+          <!--end of food 1-->
+
+          <!--food 2-->
+          <div class="col-sm-4">
+            <div class='food-item'>
+              <div class="food-picture">
+                <img src="images/main1.jpeg" class='img img-responsive' >
+              </div>
+              <div class="food-description">
+                <p class='price'>$4.50</p>
+                <h3>Medium Pizza</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                <button type="button" class='btn btn-success'>Order</button>
+              </div>
+            </div>
+          </div>
+          <!--end of food 2-->
+
+          <!--food 3-->
+          <div class="col-sm-4">
+            <div class='food-item'>
+              <div class="food-picture">
+                <img src="images/main2.jpeg" class='img img-responsive' >
+              </div>
+              <div class="food-description">
+                <p class='price'>$5.75</p>
+                <h3>Crisped Chicken</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                <button type="button" class='btn btn-success'>Order</button>
+              </div>
+            </div>
+          </div>
+          <!--end of food 3-->
+
+          <!--food 4-->
+          <div class="col-sm-4">
+            <div class='food-item'>
+              <div class="food-picture">
+                <img src="images/starter1.jpeg" class='img img-responsive' >
+              </div>
+              <div class="food-description">
+                <p class='price'>$3.75</p>
+                <h3>Seafood Salad</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                <button type="button" class='btn btn-success'>Order</button>
+              </div>
+            </div>
+          </div>
+          <!--end of food 4-->
+
+          <!--food 5-->
+          <div class="col-sm-4">
+            <div class='food-item'>
+              <div class="food-picture">
+                <img src="images/desert2.jpeg" class='img img-responsive' >
+              </div>
+              <div class="food-description">
+                <p class='price'>$5.75</p>
+                <h3>Chocolate Cake</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                <button type="button" class='btn btn-success'>Order</button>
+              </div>
+            </div>
+          </div>
+          <!--end of food 5-->
+      </div>
+      <div class="more-orders">
+        <a href=''><h3>View full menu</h3></a>
+      </div>
+    </div>
+  </section>
+  <!--End of Order-->
+
+  <!--Opening hours and subscribe-->
+  <section class='timetable'>
+    <div class="container-fluid slideanim">
+      <div class="row">
+        <div class="col-md-6 text-center opening">
+          <h1>Opening Hours</h1>
+          <p>We open from 7am-11pm Monday to Friday</p>
+          <p>8am-9pm Saturday and Sunday</p>
+        </div>
+
+        <div class="col-md-6 subscribe text-center">
+          <h2>Subscribe to our Newsletter</h2>
+          <form class="form">
+            <div class='form-group input-group'>
+              <span class='input-group-addon'>
+                <i class="fas fa-envelope"></i>
+              </span>
+              <input type='email' class='form-control' placeholder='Enter Email...'>
+            </div>
+            <button type="button" class='btn btn-block'>Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End of Opening hours and subscribe-->
+
+  <!--Customer reviews-->
+  <section class='customer-review'>
+    <div class="container">
+      <div class="row slideanim">
+        <div class="col-sm-offset-1 col-sm-10 customer-cont">
+          <h1>Customers Reviews</h1>
+          <div class="row bxslider2">
+            <div class="col-sm-4 customer-container">
+              <div class="customer customer-1 text-center">
+                <div class="text text-center">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Fusce tellus. Vivamus ac leo pretium faucibus. Nullam rhoncus
+                  aliquam metus. Temporibus autem quibusdam et aut officiis debitis
+                  aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae
+                  sint et molestiae non recusandae</p>
+                </div>
+                <div class="image">
+                  <img src="images/customer-1.jpeg" class='img img-responsive img-circle'>
+                </div>
+                <div class="final">
+                  <p>John Doe</p>
+                  <br>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 customer-container">
+              <div class="customer customer-2 text-center">
+                <div class="text text-center">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Fusce tellus. Vivamus ac leo pretium faucibus. Nullam rhoncus
+                  aliquam metus. Temporibus autem quibusdam et aut officiis debitis
+                  aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae
+                  sint et molestiae non recusandae</p>
+                </div>
+                <div class="image">
+                  <img src="images/customer-2.jpg" class='img img-responsive img-circle'>
+                </div>
+                <div class="final">
+                  <p>Arya Stark</p>
+                  <br>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 customer-container">
+              <div class="customer customer-3 text-center">
+                <div class="text text-center">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Fusce tellus. Vivamus ac leo pretium faucibus. Nullam rhoncus
+                  aliquam metus. Temporibus autem quibusdam et aut officiis debitis
+                  aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae
+                  sint et molestiae non recusandae</p>
+                </div>
+                <div class="image">
+                  <img src="images/customer-3.jpg" class='img img-responsive img-circle'>
+                </div>
+                <div class="final">
+                  <p>Isaac Newton</p>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End of Customer reviews-->
+
+  <!--footer-->
+  <footer class='footer'>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-sm-3">
+          <h3>Food Masters Resturant</h3>
+          <address>
+            25 Cornwall Avenue, Abule Egba, Ghana.
+            <br>+234 XXX XXX XXXX
+            <br>+234 XXX XXX XXXX
+          </address>
+        </div>
+        <div class="col-sm-3">
+          <h4>Primary links</h4>
+            <a>Home</a>
+            <a>Menu</a>
+            <a>About us</a>
+            <a>Careers</a>
+            <a>Contact us</a>
+        </div>
+
+        <div class="col-sm-3">
+          <h4>Secondary links</h4>
+
+            <a>Some link</a>
+            <a>Some link</a>
+            <a>some link</a>
+            <a>some link</a>
+            <a>some link</a>
+
+        </div>
+
+        <div class="col-sm-3">
+          <h4>Social Media</h4>
+          <div class="social">
+            <i class="fab fa-facebook-square fa-2x" title='facebook'></i>
+          </div>
+          <div class="social">
+            <i class="fab fa-instagram fa-2x" title='instagram'></i>
+          </div>
+          <div class="social">
+            <i class="fab fa-twitter fa-2x" title='twitter'></i>
+          </div>
+          <div class="social">
+            <i class="fa fa-envelope fa-2x" title='mail'></i>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <!--copyright-->
+      <div class="row copyright text-center">
+        <p>Copyright &copy; 2018 | Designed by Dammytrager 07010450449</p>
+
+      </div>
+      <!--end of copyright-->
+    </div>
+  </footer>
+  <!--End of footer-->
+  </body>
+</html>

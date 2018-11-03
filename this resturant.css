@@ -1,0 +1,641 @@
+/* line 6, C:/Users/USER/Desktop/sass files/this resturant.scss */
+body {
+  color: #ECDAE8;
+  font-family: Courgette;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/background.jpeg") no-repeat center fixed;
+  background-size: cover;
+}
+
+/* line 12, C:/Users/USER/Desktop/sass files/this resturant.scss */
+body .slideanim {
+  visibility: hidden;
+  visibility: visible\9;
+  /*For old IE browsers IE6-8 */
+}
+
+/* line 16, C:/Users/USER/Desktop/sass files/this resturant.scss */
+body .slideanim.slide {
+  visibility: visible;
+  animation: slide 2s;
+}
+
+/* line 20, C:/Users/USER/Desktop/sass files/this resturant.scss */
+body .slideanim::after {
+  /* useful when its child elements are float:left; */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* line 39, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/banner.jpeg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+
+/****************************Brand and icons*******************************/
+/* line 47, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.first {
+  margin-top: 20px;
+}
+
+/* line 51, C:/Users/USER/Desktop/sass files/this resturant.scss */
+a.brand {
+  color: inherit;
+  transition: all 1.5s ease-in-out;
+}
+
+/* line 56, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.group-social {
+  margin-top: 20px;
+}
+
+/* line 60, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.social {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+  transition: all 1s ease-in-out;
+}
+
+/* line 67, C:/Users/USER/Desktop/sass files/this resturant.scss */
+a.brand:hover, .social:hover {
+  color: #F20DC4;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+/* line 73, C:/Users/USER/Desktop/sass files/this resturant.scss */
+a.brand:hover {
+  background-color: #F20DC4;
+}
+
+/*********************************End of Brand and icons*************************/
+/**********************************Title******************************************/
+/* line 81, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.title-container {
+  margin-top: 25px;
+}
+
+/* line 85, C:/Users/USER/Desktop/sass files/this resturant.scss */
+h1.title {
+  font-family: Courgette;
+  font-size: 48pt;
+  border-bottom: dotted 2px #ECDAE8;
+  border-top: dotted 2px #ECDAE8;
+  animation: slide-in 4s ease-in-out 1 forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(30px);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateX(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+/* line 116, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.signature {
+  color: #F20DC4;
+}
+
+/**********************************End of Title*************************************/
+/***********************************Flexslider*************************************/
+/* line 124, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.flexslider-header {
+  color: #F20DC4;
+}
+
+/* line 128, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.flexslider-text {
+  margin-bottom: 0;
+  font-size: 16pt;
+}
+
+/************************************End of Flexslider*********************************/
+/***********************************Srolldown button*************************************/
+/* line 137, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.scroll {
+  margin-top: 30px;
+}
+
+/* line 141, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.btn.scroll {
+  background-color: #ECDAE8;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+
+/********************************End of Srolldown button*********************************/
+/****************************************Navbar*******************************************/
+/* line 163, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.navbar.navbar-inverse {
+  border-top: 0px;
+  padding: 10px;
+  height: 95px;
+  background-color: #080808;
+  opacity: 0.9;
+  margin-bottom: 0px;
+  z-index: 300;
+}
+
+/* line 172, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.navbar.navbar-inverse .navbar-brand {
+  font-family: Courgette;
+  font-size: 36pt;
+  display: inline-block;
+  margin-right: 25px;
+}
+
+/* line 177, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.navbar.navbar-inverse .navbar-brand .special {
+  color: #F20DC4;
+}
+
+/* line 183, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.navbar.navbar-inverse .collapse.navbar-collapse {
+  padding-top: 10px;
+}
+
+/* line 187, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.navbar.navbar-inverse li.on a {
+  color: #F20DC4 !important;
+  font-weight: bold;
+  font-family: Courgette;
+}
+
+/* line 195, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.navbar.navbar-inverse li a {
+  font-size: 22px;
+  color: #ECDAE8 !important;
+  font-weight: bold;
+  font-family: Courgette;
+  transition: all 1s ease-in-out;
+}
+
+/* line 202, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.navbar.navbar-inverse li a:hover {
+  color: #F20DC4 !important;
+  transform: scale(1.1);
+}
+
+/* line 211, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.navbar.navbar-inverse .btn {
+  background: transparent;
+  color: #F20DC4;
+  border: solid 2px #F20DC4;
+  padding: 5px;
+  font-size: 20px;
+}
+
+/* line 218, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.navbar.navbar-inverse .btn:hover {
+  animation: button 0.2s linear forwards;
+}
+
+@keyframes button {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+/* line 234, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.fixed {
+  box-shadow: 2px 4px rgba(242, 13, 196, 0.2);
+  width: 100%;
+  opacity: 0.9;
+  animation: slide-in2 0.4s linear;
+}
+
+@keyframes slide-in2 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: -transltranslateY(0);
+  }
+}
+
+/***********************************End of Navbar*******************************************/
+/**************************************small hype********************************************/
+/* line 250, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.small-hype {
+  background-color: #FAF3F8;
+  color: black;
+  padding: 70px 20px;
+  font-family: 'Open Sans',cursive;
+}
+
+/* line 256, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.small-hype .container {
+  margin-top: 30px;
+}
+
+/* line 260, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.small-hype h1 {
+  margin-bottom: 50px;
+}
+
+/* line 264, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.small-hype .col-sm-4 {
+  padding-left: 0px;
+  padding-left: 0px;
+}
+
+/* line 267, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.small-hype .col-sm-4 .contain {
+  padding: 40px 20px;
+  background-color: white;
+  margin-bottom: 15px;
+}
+
+/* line 273, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.small-hype .col-sm-4 .icon {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #F20DC4;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 20px;
+}
+
+/* line 283, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.small-hype .col-sm-4 .icon img {
+  width: 50px;
+}
+
+/* line 289, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.small-hype .col-sm-4 .hype-text p {
+  color: #999999;
+}
+
+/***********************************End of hype********************************************/
+/***********************************order**********************************************/
+/* line 304, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.order-section {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 70px 20px;
+}
+
+/* line 309, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.order-section h1 {
+  margin-bottom: 60px;
+  font-weight: bold;
+  background-color: #F20DC4;
+  color: #ECDAE8;
+  font-family: 'Open Sans',cursive;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* line 319, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.order-section .food-item {
+  background-color: #FAF6F9;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  font-family: 'Open Sans',cursive;
+  border: 5px solid white;
+  border-radius: 5px;
+}
+
+/* line 330, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.order-section .food-item .food-picture {
+  overflow: hidden;
+}
+
+/* line 333, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.order-section .food-item .food-picture img {
+  transition: all 1s;
+}
+
+/* line 336, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.order-section .food-item .food-picture img:hover {
+  transform: scale(1.2);
+}
+
+/* line 342, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.order-section .food-item .food-description {
+  padding: 5px;
+}
+
+/* line 345, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.order-section .food-item .food-description p {
+  color: #999999;
+}
+
+/* line 349, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.order-section .food-item .food-description .price {
+  font-size: 14pt;
+  color: #F20DC4;
+  font-weight: bold;
+}
+
+/* line 355, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.order-section .food-item .food-description .btn {
+  background-color: #F20DC4;
+  border: none;
+}
+
+/* line 359, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.order-section .food-item .food-description .btn:hover {
+  background-color: #D115A7;
+}
+
+/* line 367, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.order-section .more-orders {
+  margin-top: 30px;
+}
+
+/***********************************End of order*****************************************/
+/***********************************timetable**********************************************/
+/* line 378, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.timetable {
+  background-color: #F20DC4;
+  color: #ECDAE8;
+  font-family: 'Open Sans',cursive;
+  padding: 70px 20px;
+}
+
+/* line 383, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.timetable .opening {
+  margin-bottom: 40px;
+}
+
+/* line 385, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.timetable .opening h1, .timetable .opening p {
+  font-weight: bold;
+}
+
+/* line 388, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.timetable .opening h1 {
+  font-size: 20pt;
+}
+
+/* line 391, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.timetable .opening p {
+  font-size: 14pt;
+}
+
+/* line 396, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.timetable .subscribe {
+  margin-bottom: 40px;
+}
+
+/* line 398, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.timetable .subscribe h2 {
+  font-weight: bold;
+  font-size: 20pt;
+  margin-bottom: 20px;
+}
+
+/* line 403, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.timetable .subscribe .form-control {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* line 407, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.timetable .subscribe .btn-block {
+  background-color: #ECDAE8;
+  color: #F20DC4;
+  font-size: 14pt;
+  opacity: 0.9;
+}
+
+/* line 412, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.timetable .subscribe .btn-block:hover {
+  opacity: 1;
+}
+
+/***********************************End of timetable*****************************************/
+/***********************************Customer-Review**********************************************/
+/* line 422, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.customer-review {
+  color: black;
+  font-family: 'Open Sans',cursive;
+  padding: 70px 20px;
+  background-color: white;
+}
+
+/* line 429, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.customer-review .bxslider2 {
+  padding: 20px;
+}
+
+/* line 434, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.customer-review h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #F20DC4;
+}
+
+/* line 440, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.customer-review .customer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+/* line 445, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.customer-review .customer .text p {
+  font-size: 14pt;
+  color: #999999;
+}
+
+/* line 450, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.customer-review .customer .image {
+  margin: 20px 20px;
+}
+
+/* line 452, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.customer-review .customer .image .img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 461, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.customer-review .customer .final p {
+  font-size: 14pt;
+  color: black;
+}
+
+/*********************************End of Customer Review******************************************/
+/**************************************footer*************************************************/
+/* line 474, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.footer {
+  background-color: #323232;
+  color: #969696;
+  font-family: 'Open Sans',cursive;
+}
+
+/* line 480, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.footer .col-sm-3 h3 {
+  font-weight: bold;
+}
+
+/* line 485, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.footer .col-sm-3 h4 {
+  font-weight: bold;
+}
+
+/* line 489, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.footer .col-sm-3 a {
+  color: inherit;
+  font-size: 12pt;
+  text-decoration: underline;
+  display: block;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* line 498, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.footer .col-sm-3 .social {
+  width: 20px;
+  font-size: 10px;
+}
+
+/* line 504, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.footer .copyright {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+/***********************************End of footer**********************************************/
+/***********************************Media Queries******************************************/
+@media (max-width: 300px) {
+  /* line 527, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  .social {
+    margin-left: 4px;
+    margin-right: 4px;
+    width: 20px;
+  }
+}
+
+@media (max-width: 848px) {
+  /* line 535, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  h1.title {
+    font-size: 36pt;
+  }
+}
+
+@media (max-width: 379px) {
+  /* line 544, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  .first {
+    margin-top: 10px;
+  }
+  /* line 549, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  .group-social {
+    margin-top: 10px;
+  }
+  /* line 554, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  .brand .svg-inline--fa {
+    width: 30px;
+    border-radius: 5px !important;
+    padding: 2px !important;
+  }
+  /* line 562, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  .social .svg-inline--fa {
+    width: 15px;
+  }
+  /* line 567, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  .title-container {
+    margin-top: 15px;
+  }
+  /* line 570, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  .title-container h1.title {
+    font-size: 16pt;
+    margin-top: 5px;
+  }
+  /* line 576, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  .flexslider-header {
+    margin-top: 0px;
+  }
+  /* line 580, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  .customer {
+    width: 100%;
+  }
+  /* line 583, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  .customer .text p {
+    font-size: 11pt !important;
+  }
+  /* line 588, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  .customer-container {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 638px) {
+  /* line 595, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  .flexslider-header {
+    font-size: 14pt;
+  }
+  /* line 598, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  .flexslider-text {
+    font-size: 10pt;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 603, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  .navbar-nav {
+    float: none;
+    width: auto;
+  }
+  /* line 607, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  li {
+    float: none;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 612, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  .order {
+    width: 100%;
+  }
+  /* line 616, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  .navbar.navbar-inverse {
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=../web journey/This Resturant/this resturant.map */
