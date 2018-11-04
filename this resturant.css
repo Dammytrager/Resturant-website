@@ -522,19 +522,23 @@ h1.title {
 .footer .col-sm-3 a {
   color: inherit;
   font-size: 12pt;
-  text-decoration: underline;
   display: block;
   color: inherit;
   cursor: pointer;
 }
 
-/* line 498, C:/Users/USER/Desktop/sass files/this resturant.scss */
+/* line 495, C:/Users/USER/Desktop/sass files/this resturant.scss */
+.footer .col-sm-3 a:hover {
+  text-decoration: underline;
+}
+
+/* line 500, C:/Users/USER/Desktop/sass files/this resturant.scss */
 .footer .col-sm-3 .social {
   width: 20px;
   font-size: 10px;
 }
 
-/* line 504, C:/Users/USER/Desktop/sass files/this resturant.scss */
+/* line 506, C:/Users/USER/Desktop/sass files/this resturant.scss */
 .footer .copyright {
   margin-top: 20px;
   padding: 10px;
@@ -543,7 +547,7 @@ h1.title {
 /***********************************End of footer**********************************************/
 /***********************************Media Queries******************************************/
 @media (max-width: 300px) {
-  /* line 527, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  /* line 529, C:/Users/USER/Desktop/sass files/this resturant.scss */
   .social {
     margin-left: 4px;
     margin-right: 4px;
@@ -552,87 +556,87 @@ h1.title {
 }
 
 @media (max-width: 848px) {
-  /* line 535, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  /* line 537, C:/Users/USER/Desktop/sass files/this resturant.scss */
   h1.title {
     font-size: 36pt;
   }
 }
 
 @media (max-width: 379px) {
-  /* line 544, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  /* line 546, C:/Users/USER/Desktop/sass files/this resturant.scss */
   .first {
     margin-top: 10px;
   }
-  /* line 549, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  /* line 551, C:/Users/USER/Desktop/sass files/this resturant.scss */
   .group-social {
     margin-top: 10px;
   }
-  /* line 554, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  /* line 556, C:/Users/USER/Desktop/sass files/this resturant.scss */
   .brand .svg-inline--fa {
     width: 30px;
     border-radius: 5px !important;
     padding: 2px !important;
   }
-  /* line 562, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  /* line 564, C:/Users/USER/Desktop/sass files/this resturant.scss */
   .social .svg-inline--fa {
     width: 15px;
   }
-  /* line 567, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  /* line 569, C:/Users/USER/Desktop/sass files/this resturant.scss */
   .title-container {
     margin-top: 15px;
   }
-  /* line 570, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  /* line 572, C:/Users/USER/Desktop/sass files/this resturant.scss */
   .title-container h1.title {
     font-size: 16pt;
     margin-top: 5px;
   }
-  /* line 576, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  /* line 578, C:/Users/USER/Desktop/sass files/this resturant.scss */
   .flexslider-header {
     margin-top: 0px;
   }
-  /* line 580, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  /* line 582, C:/Users/USER/Desktop/sass files/this resturant.scss */
   .customer {
     width: 100%;
   }
-  /* line 583, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  /* line 585, C:/Users/USER/Desktop/sass files/this resturant.scss */
   .customer .text p {
     font-size: 11pt !important;
   }
-  /* line 588, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  /* line 590, C:/Users/USER/Desktop/sass files/this resturant.scss */
   .customer-container {
     margin-left: 20px;
   }
 }
 
 @media (max-width: 638px) {
-  /* line 595, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  /* line 597, C:/Users/USER/Desktop/sass files/this resturant.scss */
   .flexslider-header {
     font-size: 14pt;
   }
-  /* line 598, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  /* line 600, C:/Users/USER/Desktop/sass files/this resturant.scss */
   .flexslider-text {
     font-size: 10pt;
   }
 }
 
 @media (max-width: 768px) {
-  /* line 603, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  /* line 605, C:/Users/USER/Desktop/sass files/this resturant.scss */
   .navbar-nav {
     float: none;
     width: auto;
   }
-  /* line 607, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  /* line 609, C:/Users/USER/Desktop/sass files/this resturant.scss */
   li {
     float: none;
   }
 }
 
 @media (max-width: 991px) {
-  /* line 612, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  /* line 614, C:/Users/USER/Desktop/sass files/this resturant.scss */
   .order {
     width: 100%;
   }
-  /* line 616, C:/Users/USER/Desktop/sass files/this resturant.scss */
+  /* line 618, C:/Users/USER/Desktop/sass files/this resturant.scss */
   .navbar.navbar-inverse {
     height: auto;
   }
